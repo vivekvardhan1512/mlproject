@@ -1,0 +1,13 @@
+prefix=/Users/antonyedwardstark/Downloads/mlproject/venv
+exec_prefix=/Users/antonyedwardstark/Downloads/mlproject/venv
+libdir=/Users/antonyedwardstark/Downloads/mlproject/venv/lib
+sharedlibdir=/Users/antonyedwardstark/Downloads/mlproject/venv/lib
+includedir=/Users/antonyedwardstark/Downloads/mlproject/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
