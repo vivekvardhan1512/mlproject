@@ -1,22 +1,19 @@
 import os
 import sys
-import pandas as pd 
-import numpy as np 
-import dill 
-
+import dill
 from mlproject.src.exception import CustomException
+from mlproject.src.logger import logging
 
-
-def save_object(file_path,obj):
+def save_object(file_path, obj):
     try:
-
         dir_path = os.path.dirname(file_path)
-        os.makedirs(dir_path, file_obj)
+        os.makedirs(dir_path, exist_ok=True)  # ✅ Correct usage
 
-        with open(file_path,'wb') as file_obj:
+        with open(file_path, "wb") as file_obj:
             dill.dump(obj, file_obj)
 
+        logging.info(f"Object saved successfully at {file_path}")
+
     except Exception as e:
-        raise CustomException(e,sys)
-
-
+        logging.error(f"Error while saving object: {e}")
+        raise CustomException(e, sys)

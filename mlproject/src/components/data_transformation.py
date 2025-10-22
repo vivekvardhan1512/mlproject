@@ -36,7 +36,7 @@ class DataTransformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ("imputer", SimpleImputer(strategy="most_frequent")),
-                    ("one_hot_encoder", OneHotEncoder()),
+                    ("one_hot_encoder", OneHotEncoder(sparse_output=False)),
                     ("scaler", StandardScaler())
                 ]
             )
@@ -89,12 +89,14 @@ class DataTransformation:
                 file_path = self.data_transformation_config.preprocessor_ob_file_path,
                 obj = preprocessing_obj
             )
-
+            logging.info("Pickle file created successfully")    
             return (train_arr, 
                     test_arr,
                     self.data_transformation_config.preprocessor_ob_file_path
                     )
+            
 
         except Exception as e:
+            logging.info("Exception occurred in initiate_data_transformation function")
             raise CustomException(e, sys)
         

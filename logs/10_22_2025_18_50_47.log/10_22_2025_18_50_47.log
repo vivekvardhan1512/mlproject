@@ -1,0 +1,12 @@
+[2025-10-22 18:50:49,905] 25 root - INFO - Entered the data ingestion method or component
+[2025-10-22 18:50:49,912] 28 root - INFO - Read the dataset as dataframe successfully
+[2025-10-22 18:50:49,917] 32 root - INFO - Train Test split initiated
+[2025-10-22 18:50:49,924] 37 root - INFO - Ingestion of the data is COMPLETE
+[2025-10-22 18:50:49,930] 64 root - INFO - Reading Train and Test Datasets COMPLETE
+[2025-10-22 18:50:49,930] 65 root - INFO - Obtaining preprocessing object
+[2025-10-22 18:50:49,930] 45 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-10-22 18:50:49,930] 46 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[2025-10-22 18:50:49,932] 78 root - INFO - Applying preprocessing to Train and Test Datasets
+[2025-10-22 18:50:49,952] 86 root - INFO - Saved preprocessing object
+[2025-10-22 18:50:49,957] 15 root - INFO - Object saved successfully at artifacts/preprocessor.pkl
+[2025-10-22 18:50:49,957] 92 root - INFO - Pickle file created successfully

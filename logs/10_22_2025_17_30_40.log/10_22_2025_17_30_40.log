@@ -1,0 +1,10 @@
+[2025-10-22 17:30:42,218] 25 root - INFO - Entered the data ingestion method or component
+[2025-10-22 17:30:42,225] 28 root - INFO - Read the dataset as dataframe successfully
+[2025-10-22 17:30:42,232] 32 root - INFO - Train Test split initiated
+[2025-10-22 17:30:42,240] 37 root - INFO - Ingestion of the data is COMPLETE
+[2025-10-22 17:30:42,247] 64 root - INFO - Reading Train and Test Datasets COMPLETE
+[2025-10-22 17:30:42,247] 65 root - INFO - Obtaining preprocessing object
+[2025-10-22 17:30:42,247] 45 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-10-22 17:30:42,247] 46 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[2025-10-22 17:30:42,250] 78 root - INFO - Applying preprocessing to Train and Test Datasets
+[2025-10-22 17:30:42,267] 100 root - INFO - Exception occurred in initiate_data_transformation function
