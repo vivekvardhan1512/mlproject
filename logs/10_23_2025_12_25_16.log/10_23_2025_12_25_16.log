@@ -1,0 +1,24 @@
+[2025-10-23 12:25:18,568] 27 root - INFO - Entered the data ingestion method or component
+[2025-10-23 12:25:18,573] 30 root - INFO - Read the dataset as dataframe successfully
+[2025-10-23 12:25:18,577] 34 root - INFO - Train Test split initiated
+[2025-10-23 12:25:18,584] 39 root - INFO - Ingestion of the data is COMPLETE
+[2025-10-23 12:25:18,591] 64 root - INFO - Reading Train and Test Datasets COMPLETE
+[2025-10-23 12:25:18,591] 65 root - INFO - Obtaining preprocessing object
+[2025-10-23 12:25:18,591] 45 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-10-23 12:25:18,591] 46 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[2025-10-23 12:25:18,593] 78 root - INFO - Applying preprocessing to Train and Test Datasets
+[2025-10-23 12:25:18,614] 86 root - INFO - Saved preprocessing object
+[2025-10-23 12:25:18,619] 18 root - INFO - Object saved successfully at artifacts/preprocessor.pkl
+[2025-10-23 12:25:18,619] 92 root - INFO - Pickle file created successfully
+[2025-10-23 12:25:18,619] 28 root - INFO - Splitting Train and Test input data
+[2025-10-23 12:25:18,632] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:25:18,823] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:25:24,349] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:25:38,887] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:25:46,079] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:26:21,021] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:26:21,275] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:26:27,056] 36 root - INFO - Best parameters for model {list(models.keys())[i]}: {gs.best_params_}
+[2025-10-23 12:26:27,105] 90 root - INFO - Best Model found on both Training and Test datasets: Linear Regression
+[2025-10-23 12:26:27,107] 18 root - INFO - Object saved successfully at artifacts/model.pkl
+[2025-10-23 12:26:27,108] 99 root - INFO - R2 Score of the best model: 0.8804332983749565

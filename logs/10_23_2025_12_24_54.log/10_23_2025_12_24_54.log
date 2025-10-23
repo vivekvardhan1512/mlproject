@@ -1,0 +1,14 @@
+[2025-10-23 12:24:56,150] 27 root - INFO - Entered the data ingestion method or component
+[2025-10-23 12:24:56,154] 30 root - INFO - Read the dataset as dataframe successfully
+[2025-10-23 12:24:56,161] 34 root - INFO - Train Test split initiated
+[2025-10-23 12:24:56,167] 39 root - INFO - Ingestion of the data is COMPLETE
+[2025-10-23 12:24:56,174] 64 root - INFO - Reading Train and Test Datasets COMPLETE
+[2025-10-23 12:24:56,174] 65 root - INFO - Obtaining preprocessing object
+[2025-10-23 12:24:56,174] 45 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-10-23 12:24:56,174] 46 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[2025-10-23 12:24:56,176] 78 root - INFO - Applying preprocessing to Train and Test Datasets
+[2025-10-23 12:24:56,197] 86 root - INFO - Saved preprocessing object
+[2025-10-23 12:24:56,203] 18 root - INFO - Object saved successfully at artifacts/preprocessor.pkl
+[2025-10-23 12:24:56,203] 92 root - INFO - Pickle file created successfully
+[2025-10-23 12:24:56,203] 28 root - INFO - Splitting Train and Test input data
+[2025-10-23 12:24:56,226] 50 root - ERROR - Error while evaluating models: set_params() takes 1 positional argument but 2 were given
