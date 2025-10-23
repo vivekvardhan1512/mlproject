@@ -1,0 +1,3 @@
+[2025-10-23 14:51:56,955] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-10-23 14:51:56,968] 97 werkzeug - INFO -  * Debugger PIN: 438-059-831
+[2025-10-23 14:56:28,998] 97 werkzeug - INFO -  * Detected change in '/Users/antonyedwardstark/Downloads/mlproject/application.py', reloading

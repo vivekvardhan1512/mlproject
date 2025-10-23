@@ -1,0 +1,11 @@
+[2025-10-23 13:25:15,403] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-10-23 13:25:15,426] 97 werkzeug - INFO -  * Debugger PIN: 438-059-831
+[2025-10-23 13:25:54,008] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:25:54] "GET / HTTP/1.1" 200 -
+[2025-10-23 13:25:54,062] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:25:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-10-23 13:26:14,847] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:14] "GET /predictdata HTTP/1.1" 200 -
+[2025-10-23 13:26:49,528] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:49] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2025-10-23 13:26:49,549] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:49] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-10-23 13:26:49,551] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:49] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-10-23 13:26:49,585] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:49] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=v4zAgwBbPKhc3x656dEl HTTP/1.1" 200 -
+[2025-10-23 13:26:49,605] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 13:26:49] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-10-23 13:28:29,831] 97 werkzeug - INFO -  * Detected change in '/Users/antonyedwardstark/Downloads/mlproject/mlproject/src/app.py', reloading

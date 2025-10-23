@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f8f9fa;">
+    <div class="container mt-5">
+        <h1 class="text-center mb-3 text-primary">Student Exam Performance Indicator</h1>
+        <h3 class="text-center mb-4 text-secondary">Student Exam Performance Prediction</h3>
+
+        <form action="{{ url_for('predict_datapoint') }}" method="POST" class="p-4 border rounded bg-white shadow">
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select name="gender" class="form-select" required>
+                        <option value="">Select your Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="race_ethnicity" class="form-label">Race or Ethnicity</label>
+                    <select name="race_ethnicity" class="form-select" required>
+                        <option value="">Select Ethnicity</option>
+                        <option value="group A">Group A</option>
+                        <option value="group B">Group B</option>
+                        <option value="group C">Group C</option>
+                        <option value="group D">Group D</option>
+                        <option value="group E">Group E</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="parental_level_of_education" class="form-label">Parental Level of Education</label>
+                    <select name="parental_level_of_education" class="form-select" required>
+                        <option value="">Select Parent Education</option>
+                        <option value="bachelor's degree">Bachelor's Degree</option>
+                        <option value="master's degree">Master's Degree</option>
+                        <option value="associate's degree">Associate's Degree</option>
+                        <option value="some college">Some College</option>
+                        <option value="high school">High School</option>
+                        <option value="some high school">Some High School</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="lunch" class="form-label">Lunch Type</label>
+                    <select name="lunch" class="form-select" required>
+                        <option value="">Select Lunch Type</option>
+                        <option value="standard">Standard</option>
+                        <option value="free/reduced">Free/Reduced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="test_preparation_course" class="form-label">Test Preparation Course</label>
+                    <select name="test_preparation_course" class="form-select" required>
+                        <option value="">Select Test Course</option>
+                        <option value="none">None</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="reading_score" class="form-label">Reading Score (out of 100)</label>
+                    <input type="number" name="reading_score" class="form-control" placeholder="Enter Reading Score" min="0" max="100" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="writing_score" class="form-label">Writing Score (out of 100)</label>
+                    <input type="number" name="writing_score" class="form-control" placeholder="Enter Writing Score" min="0" max="100" required>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary px-4 py-2">Predict your Maths Score</button>
+            </div>
+        </form>
+
+        {% if results %}
+        <div class="alert alert-success text-center mt-4 fs-5" role="alert">
+            <strong>The predicted Math Score is: {{ results }}</strong>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

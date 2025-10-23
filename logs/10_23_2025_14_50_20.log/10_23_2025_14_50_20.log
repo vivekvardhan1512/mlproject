@@ -1,0 +1,5 @@
+[2025-10-23 14:50:20,676] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-10-23 14:50:20,687] 97 werkzeug - INFO -  * Debugger PIN: 438-059-831
+[2025-10-23 14:50:30,058] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 14:50:30] "GET /predictdata HTTP/1.1" 200 -
+[2025-10-23 14:50:44,407] 97 werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 14:50:44] "POST /predictdata HTTP/1.1" 200 -
+[2025-10-23 14:51:55,235] 97 werkzeug - INFO -  * Detected change in '/Users/antonyedwardstark/Downloads/mlproject/mlproject/src/app.py', reloading
